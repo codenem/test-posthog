@@ -4,4 +4,4 @@ const helloWorld = async () => {
   console.log("Hello World");
 };
 
-export default defer(helloWorld);
+export default defer(helloWorld, {maxDuration: 332});
