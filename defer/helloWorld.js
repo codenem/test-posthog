@@ -5,7 +5,7 @@ const helloWorld = async () => {
     setTimeout(() => {
       console.log("Hello World");
       resolve()
-    }, 300000)
+    }, 1000)
   })
 
 };
