@@ -8,7 +8,7 @@ const basicAuth = (username, password) => {
 };
 
 const reschedule = async () => {
-  const { id: executionID } = await delay(helloWorld, "1h")("John")
+  const { id: executionID } = await delay(helloWorld, "5s")("John")
 
   try {
     const response = await fetch(`${process.env.DEFER_ENDPOINT}/public/v1/executions/${executionID}/reschedule`, {
